@@ -1,0 +1,86 @@
+<style>
+    body{
+        background-color: RGB(254,60,114);
+    }
+
+    .SignInDetails{
+        margin: auto;
+        width: 245px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 5px;
+        padding: 4px;
+        position: relative;
+        top:120px;
+        left: 38%;
+        right: 0;
+        bottom: 0;
+        
+    }
+    img{
+        position: relative;
+        left: 38%;
+        width: 20%;
+        animation-name: Beep;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes Beep {
+        0%{
+            transform: scale(1.1);
+        }
+        50%{
+            transform: scale(0.6);
+            
+        }
+    
+    }
+    h2{
+        text-align: center;
+        font: italic;
+    }
+    
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+    .signupbtn{
+        border-radius: 30% ;
+        margin-right: 50px;
+    }
+    .signupbtn:hover{
+        transform: scale(2);
+    }
+</style>
+
+
+
+<div class="SignInDetails">
+        <img src="Tinder-logo.jpg">
+        <h2>Sign Up</h2>
+        <hr>
+        <form>
+            
+                <label for="name"><b>Name:</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+            
+
+        
+                <label for="password"><b>Password:</b></label>
+                <input type="password" name="password" required>
+
+                <div class="clearfix">
+
+                   <a href="#"> <button type="submit" class="signupbtn">Sign Up</button></a>
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    
+                  </div>
+            
+        </form>
+
+</div>
